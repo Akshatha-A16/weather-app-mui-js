@@ -20,7 +20,8 @@ import {
 import SearchIcon from '@mui/icons-material/Search';
 import axios from 'axios';
 
-const KEY   = '5d8f93cfad1471a59abd8a7bec09a954';
+
+const KEY = process.env.REACT_APP_WEATHER_KEY;
 const BASE  = 'https://api.openweathermap.org/data/2.5/weather';
 
 const light = createTheme({ palette: { mode: 'light' } });
